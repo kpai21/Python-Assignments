@@ -1,0 +1,81 @@
+1.What are the two values of the Boolean data type? How do you write them?
+A) True and False
+
+2. What are the three different types of Boolean operators?
+A) and, or, not
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+A) 
+First Bool value        Second bool value     and operator        or operator         
+True                      True                  True                True                
+True                      False                 False               True      
+False                     True                  False               True
+False                     False                 False               False 
+
+Bool value          not operator
+True                  False
+False                 True
+
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5) -> False
+not (5 > 4)  ->  False 
+(5 > 4) or (3 == 5) -> True
+not ((5 > 4) or (3 == 5))  -> True
+(True and True) and (True == False)  -> False
+(not False) or (not True)  -> True
+
+5. What are the six comparison operators?
+A) ==, >= , <=, !=, <, >  
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+A) equal to = "==" , assignment operator = "=",
+
+While we compare the values we use "==", for assigning we use "=". 
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+  print('eggs')
+if spam > 5:
+  print('bacon')
+else:
+  print('ham')
+  print('spam')
+  print('spam')
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+A) 
+if spam == 1:
+  print('Hello')
+elif spam == 2:
+  print('Howdy')
+else:
+  print('Greetings!')
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+Ctrl + C
+
+10. How can you tell the difference between break and continue?
+Break will bring the control out of loop and where as continue will only break the current iteration and continue with other.
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+A) All will print the numbers till 10, range (10) -> prints 10 numbers (0 - 9),
+range (0,10) -> prints numbers from 0 to 10, with 0 as start and end as 10.
+range (0,10,1) -> prints numbers from 1 to 10 with step 1.
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+A) 
+for i in range(1, 11):
+    print (i)
+
+i=1;
+while i<=10:
+    print(i)
+    i = i+1
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+A) 
+import spam
+
+  spam.bacon()
