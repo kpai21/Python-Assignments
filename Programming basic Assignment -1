@@ -1,0 +1,22 @@
+import random
+
+#print hello python
+print("Hello Python")
+#Arithmatical operations
+print(3 + 4)
+print(3 / 4)
+print(3 * 4)
+print(3 - 4)
+#Area of triangle
+base = input("base of triange")
+height = input("height of triangle")
+print ('Area of triangle ' + str(0.5*float(base)*float(height)))
+#Swap two variables
+x = input("Type x ")
+y = input("Type y ")
+temp = x
+x = y
+y = temp
+print ('swap '+ 'x: ' + x + ' y: ' + y)
+#Generate random number
+print ('Random number is' + str(random.randint(0,5)))
